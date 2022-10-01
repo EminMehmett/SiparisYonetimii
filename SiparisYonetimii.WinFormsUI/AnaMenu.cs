@@ -16,5 +16,11 @@ namespace SiparisYonetimii.WinFormsUI
         {
             InitializeComponent();
         }
+
+        private void kullanıcıYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KullaniciYonetimi kullaniciYonetimi = new KullaniciYonetimi();
+            kullaniciYonetimi.ShowDialog();
+        }
     }
 }

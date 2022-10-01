@@ -52,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
+    <Compile Include="Migrations\202210011641338_InitialCreate.cs" />
+    <Compile Include="Migrations\202210011641338_InitialCreate.designer.cs">
+      <DependentUpon>202210011641338_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +68,11 @@
       <Project>{014138BF-7EF9-407B-9E3F-7D6A8D70DF73}</Project>
       <Name>SiparisYonetimii.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202210011641338_InitialCreate.resx">
+      <DependentUpon>202210011641338_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
